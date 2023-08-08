@@ -1,0 +1,171 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #445a23;
+    padding: 10px 20px;
+    height: 50px;
+}
+
+h2 {
+    font-family: "Lexend";
+    color: white;
+    font-size: 14px;
+}
+
+/* Style the logo */
+.logo img {
+    max-width: 50px;
+    height: auto;
+
+} 
+
+.logotype {
+
+    font-family: 'Lexend';
+    font-size: 14px;
+    color: white;
+    top: -17.5px;
+    left: 10px;
+    align-items: center;   
+    position: relative;
+}
+
+/* Style the navigation menu */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #445a23;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    font-family: 'Lexend';
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 10px;
+}
+
+/* Change link color on hover */
+nav ul li a:hover {
+    color: #fffb00;
+}
+
+
+.hire-button {
+    background-color: #ffffff;
+    color: rgb(78, 78, 78);
+    padding: 10px 20px; 
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: normal;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+    font-family: "Lexend";
+    font-size: 14px;
+}
+
+.hire-button:hover {
+    background-color: #3f3f3f;
+    color: white;
+}
+
+
+.language-select {
+    position: relative;
+    margin-left: 20px;
+}
+
+/* Style the language icon */
+.language-select img {
+    width: 20px; /* Adjust the size as needed */
+    height: 20px; /* Adjust the size as needed */
+    cursor: pointer;
+}
+
+/* Style the language options dropdown */
+.language-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -100px;
+    top: 50px;
+    background-color: #e8f5dd;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 25px 10px;
+    border-radius: 5px;
+    align-content: left;
+    cursor: progress;
+
+}
+
+.language-options li {
+    padding: 5px 10px;
+}
+
+/* Show the language options when hovering over the icon */
+.language-select:hover .language-options {
+    display: block;
+}
+
+/* Simplifier */
+
+.hamburger-menu {
+    display: none; /* Initially hidden on larger screens */
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        display: none; /* Hide navigation links on smaller screens */
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-links.active {
+        display: flex; /* Show navigation links when active */
+        flex-direction: column; /* Display vertically */
+    }
+    
+    .hamburger-menu {
+        display: block; /* Show hamburger menu icon on smaller screens */
+    }
+    
+    /* Style the hamburger icon */
+    .hamburger-icon {
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        margin: 6px 0;
+    }
+}
+    

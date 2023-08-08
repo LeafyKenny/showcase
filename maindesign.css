@@ -1,0 +1,168 @@
+/* Texts */
+
+h1, h2, h3, h4, h5 {
+    font-family: "Lexend";
+    color:#445a23;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+
+
+/* Set background color */
+body { 
+    margin: 0;
+    padding: 0;
+    background-color: rgba(195, 213, 168, 0.8); /* Background color with opacity */
+    position: relative; /* Required for the overlay pseudo-element */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/grid-pattern.png');
+    opacity: 0.4; /* Adjust the opacity value as needed */
+    z-index: -1; /* Place the overlay below the content */
+}
+
+
+/* Style the grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust as needed */
+    grid-gap: 10px; /* Thickness of gridlines */
+    max-width: 100%; /* Set a maximum width */
+    max-height: 100%;
+    margin: 0 auto; /* Center the grid container */
+    background-color: #c3d5a8; /* Grid background color */
+    padding: 20px; /* Add spacing around the grid */
+    
+}
+
+/* Style the grid items */
+.grid-item {
+    background-color: white; /* Color of the grid items */
+    padding: 20px; /* Add spacing within the grid items */
+    text-align: center;
+}
+
+/* ... Other CSS rules ... */
+
+
+/* NavBar */
+
+/* ... Other CSS rules ... */
+
+/* Style the content wrapper */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Stretch content to full height */
+}
+
+/* Style the main content area */
+main {
+    flex: 1; /* Take up remaining space */
+    padding: 100px;
+}
+
+/* ... Other CSS rules ... */
+
+/* Style the navigation bar to be fixed at the top */
+iframe {
+    width: 100%;
+    height: 70px; /* Adjust height as needed */
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure the navbar appears above other content */
+    background-color: white; /* Adjust as needed */
+    /* Add additional styles for the navbar */
+}
+
+/* ... Other CSS rules ... */
+
+/* Style the container */
+.container {
+    border: 2px dashed #445a23; /* Broken lines border with color */
+    padding: 20px; /* Add spacing inside the container */
+    position: relative; /* Required for the header bar positioning */
+    border-radius: 5px;
+    background-color: #e8f5dd;
+    width: 100%;
+    align-self: center;
+    display: flex;
+}
+
+/* Style the header bar */
+.container-header {
+    background-color: #445a23; /* Green header bar color */
+    color: white; /* Text color for the header */
+    padding: 15px 0px; /* Spacing inside the header bar */
+    position: absolute; /* Position the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the header bar span the entire width */
+}
+
+/* Style the text title */
+.title {
+    margin: 0;
+    font-family: 'Lexend';
+    font-size: 14px;
+    margin-left: 20px;
+    color: white;
+    font-weight: normal;
+}
+
+/* ... Other CSS rules ... */
+
+.container-text {
+    font-family: 'Lexend';
+    font-size: 14px;
+    margin-left: 20px;
+    color: #445a23;
+    position: relative;
+    top: 20px;
+    left: -20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.left-column {
+    flex: 1; /* Take up available space */
+    padding: 10px; /* Add spacing inside the column */
+}
+
+/* Style the right column */
+.right-column {
+    flex: 4; /* Take up available space */
+    padding: 10px; /* Add spacing inside the column */
+}
+
+img {
+    top: 50px;
+    margin-top: 50px;
+    
+}
+
+.avatarimg {
+
+    border-radius: 15px;
+    width: 300px;
+    height: auto;
+    
+}
+
